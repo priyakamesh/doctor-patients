@@ -15,16 +15,22 @@ angular
 })
 
 .controller ("RootCtrl" ,function ($scope, doctorFactory) {
-  doctorFactory.getPatients ()
+  doctorFactory.getDoctors ()
   .then ((value)=> {
     console.log(value)
-    $scope.doctorsList = value.doctors
+    $scope.doctorsList = value
     // $location.path(`/doctor/${$scope.last_name}`)
   })
 })
-.controller ("PatientCtrl", function ($http,$scope,$routeParams){
+.controller ("PatientCtrl", function ($http,$scope,$routeParams,doctorFactory){
+   doctorFactory.getDoctors ()
+  .then ((value)=> {
+    console.log(value)
+    $scope.doctorsList = value
+    // $location.path(`/doctor/${$scope.last_name}`)
+  })
   $scope.doctor_id = $routeParams.doctorSelected
-  $http.get(`https://doctor-patient-priya.firebaseio.com/patients.json?orderBy="doctor_id"&equalTo("${$scope.doctor_id}")`)
+  $http.get(`https://doctor-patient-priya.firebaseio.com/patients.json?orderBy="doctor_id"&equalTo="${$scope.doctor_id}"`)
   .then((value) => {
     console.log(value)
     $scope.patientsList = value.data
@@ -36,9 +42,10 @@ angular
 
 
 .factory("doctorFactory", function ($http) {
-  return{ getPatients () {
-            return $http.get(`https://doctor-patient-priya.firebaseio.com/.json`)
+  return{ getDoctors () {
+            return $http.get(`https://doctor-patient-priya.firebaseio.com/doctors.json`)
                     .then ((value) => {
+                      console.log(value)
                       return value.data
                      })
              }

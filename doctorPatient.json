@@ -19,7 +19,7 @@
     "patients": {
         "svenson": {
             "ailment": "Arthritis",
-            "doctor_id": "killigrew",
+            "doctor_id": "Killigrew",
             "first_name": "Margot",
             "last_name": "Svenson"
         },
