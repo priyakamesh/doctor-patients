@@ -1,0 +1,12 @@
+<h1>welcome to patients list</h1>
+
+
+<div>
+  <li ng-repeat="patients in patientsList" class="liststyle">
+    <!-- <div ng-repeat = "patient in patients" > -->
+     <div> {{patients.first_name}} {{patients.last_name}}</div>
+      <div>{{patients.ailment}}</div>
+    <!-- </div> -->
+
+  </li>
+  </div>

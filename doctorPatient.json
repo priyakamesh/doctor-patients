@@ -1,0 +1,39 @@
+{
+    "doctors": {
+        "killigrew": {
+            "first_name": "Johan",
+            "last_name": "Killigrew",
+            "speciality": "Pediatrics"
+        },
+        "Hitch": {
+            "first_name": "Wendy",
+            "last_name": "Hitch",
+            "speciality": "Pediatrics"
+        },
+        "Jones": {
+            "first_name": "Katherine W",
+            "last_name": "Jones",
+            "speciality": "Family Physician"
+        }
+    },
+    "patients": {
+        "svenson": {
+            "ailment": "Arthritis",
+            "doctor_id": "killigrew",
+            "first_name": "Margot",
+            "last_name": "Svenson"
+        },
+        "Kamesh": {
+            "ailment": "Cold",
+            "doctor_id": "Hitch",
+            "first_name": "Nithin",
+            "last_name": "Kamesh"
+        },
+        "Anandan": {
+            "ailment": "Allergy",
+            "doctor_id": "Jones",
+            "first_name": "Kamesh",
+            "last_name": "Anandan"
+        }
+    }
+}

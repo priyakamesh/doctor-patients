@@ -1,0 +1,22 @@
+{
+  "name": "doctor-patients",
+  "homepage": "https://github.com/priyakamesh/doctor-patients",
+  "authors": [
+    "krishnapriya <krishnapriyakamesh@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "firebase": "^3.6.6"
+  }
+}

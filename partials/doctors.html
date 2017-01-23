@@ -1,0 +1,12 @@
+<h1>Doctors list</h1>
+
+<div>
+  <li ng-repeat="doctors in doctorsList" class="liststyle" >
+    <!-- <div ng-repeat = "doctor in doctors"  > -->
+       <a ng-href="#/doctor/{{doctors.last_name}}">
+       {{doctors.first_name}} {{doctors.last_name}}</a>
+      <div>{{doctors.speciality}}</div>
+    <!-- </div> -->
+
+  </li>
+  </div>
